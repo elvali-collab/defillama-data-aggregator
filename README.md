@@ -391,26 +391,6 @@ defillama-data defillama protocols --limit 100 -f csv > protocols.csv
 # Export yields to CSV
 defillama-data defillama yields --limit 100 -f csv > yields.csv
 ```
-
----
-
-## 🧪 Testing
-
-Run the deployment test script to verify all functionality:
-
-```bash
-bash deployment_test.sh
-```
-
-This will test:
-- Version check
-- Health check
-- TVL query
-- Protocol query
-- Sorting functionality
-- Input validation
-
-
 ---
 
 ## 📚 Documentation
@@ -455,3 +435,4 @@ SOFTWARE.
 For detailed DefiLlama API documentation:
 - https://docs.llama.fi/
 
+- Maintainer: Antalpha AI Team
