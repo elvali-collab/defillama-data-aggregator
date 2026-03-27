@@ -1,11 +1,5 @@
 # 🚀 DefiLlama Data Aggregator
 
-> **Version**: 1.0.3
-> **Update Date**: 2026-03-27
-> **Description**: Professional DefiLlama data aggregator with security validation and bug fixes - DeFi TVL, protocols, chains, and yields data
-
----
-
 ## 📊 Overview
 
 DefiLlama Data Aggregator is a professional-grade command-line tool that provides unified access to DefiLlama's comprehensive DeFi data. It supports querying Total Value Locked (TVL), protocol data, chain statistics, and yield pool information with built-in security validation and error handling.
@@ -263,70 +257,6 @@ defillama-data status
 defillama-data status
 ```
 
----
-
-## 📤 Output Formats
-
-All commands support multiple output formats:
-
-### Pretty (Default)
-
-Human-readable format with colored output.
-
-```bash
-defillama-data defillama tvl -f pretty
-```
-
-### Table
-
-Structured table format for data comparison.
-
-```bash
-defillama-data defillama protocols --limit 10 -f table
-```
-
-### JSON
-
-Machine-readable format for scripts and automation.
-
-```bash
-defillama-data defillama tvl -f json | jq '.totalTvl'
-```
-
-### CSV
-
-Spreadsheet-friendly format for data export and analysis.
-
-```bash
-defillama-data defillama protocols --limit 50 -f csv > protocols.csv
-```
-
----
-
-## 🔒 Security Features
-
-### Input Validation
-
-All user inputs are validated and sanitized:
-
-| Input Type | Validation Rules | Length Limit |
-|-----------|-----------------|--------------|
-| Protocol Name | Alphanumeric + hyphens only | 1-50 characters |
-| Chain Name | Alphanumeric + spaces + hyphens | 1-50 characters |
-| Category Name | Alphanumeric + spaces + hyphens | 1-50 characters |
-| Limit | 1-500 | - |
-| Min APY | 0-1000% | - |
-| Min TVL | ≥ 0 | - |
-
-### Error Handling
-
-- API errors (4xx, 5xx) with status codes
-- Network errors (timeout, connection refused)
-- Validation errors with helpful messages
-- Sanitized error messages to prevent information leakage
-
----
-
 ## 🛠️ Configuration
 
 ### Setup Configuration File (Optional)
@@ -403,31 +333,6 @@ defillama-data defillama yields --limit 100 -f csv > yields.csv
 | FULL_FEATURE_LIST.md | Complete feature list |
 | DEPLOYMENT_CHECKLIST.md | Deployment checklist |
 | LAUNCH_REPORT.md | Launch report |
-
----
-
-## 📄 License
-
-MIT License - Copyright (c) 2026 Antalpha
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
 ---
 
 ## 🌐 API Documentation
