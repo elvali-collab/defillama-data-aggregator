@@ -340,4 +340,4 @@ defillama-data defillama yields --limit 100 -f csv > yields.csv
 For detailed DefiLlama API documentation:
 - https://docs.llama.fi/
 
-- Maintainer: Antalpha AI Team
+##  Maintainer: Antalpha AI Team
